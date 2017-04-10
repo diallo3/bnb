@@ -1,16 +1,24 @@
-<!doctype html>
-<html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <link rel="stylesheet" href="{{ "/assets/css/app.css" | prepend: site.baseurl }}">
-  </head>
-  <body>
+---
+layout: compress
+---
 
-    {{ content }}
+<div class="c-offcanvas">
+	<div class="c-offcanvas__content">
+		{% include header.html %}
 
-    <script src="{{ "/assets/js/app.js" | prepend: site.baseurl }}"></script>
-  </body>
-</html>
+		{{ content }}
+
+		{% include footer.html %}
+	</div>
+	<div class="c-offcanvas__nav" data-off-canvas>
+		<menu>
+			<li>item</li>
+			<li>item</li>
+			<li>item</li>
+			<li>item</li>
+			<li>item</li>
+		</menu>
+	</div>
+</div>
+
+

@@ -1,0 +1,30 @@
+{% include head.html %}
+
+<div class="c-header-container l-block">
+	<header class="c-site-header l-wrap">
+		<div class="l-logo l-logo--main">
+			{% if page.url == "/" %}
+				&nbsp;
+			{% else %}
+			<div class="o-logo o-logo--header">
+				<a href="/" class="o-logo__brand u-ir">
+					<img src="{{site.assets}}/logo-mid.svg" alt="">
+				</a>
+			</div>
+			{% endif %}
+		</div>
+		<nav class="l-menu l-menu--main">
+			{% include components/inc-nav-menu.html %}
+
+			<menu class="c-menu c-menu--mobile">
+				<button class="hamburger hamburger--slider" type="button">
+				 <span class="hamburger-box">
+				    <span class="hamburger-inner"></span>
+				  </span>
+				</button>
+			</menu>
+		</nav>
+	</header>
+</div>
+{% include components/inc-hero-main.html %}
+

@@ -1,0 +1,24 @@
+{% if page.url == "/" %} 
+<div class="c-hero c-hero--main ">
+	<article class="c-hero__entry">
+		<figure class="o-brand">
+			<img src="{{site.assets}}/logo-featured.svg" alt="" class="o-brand__image">
+		</figure>
+		<footer class="c-hero__footer">
+			<p><a href="#" class="o-cta o-cta--primary">Get Started</a></p>
+		</footer>
+	</article>
+</div>
+{% else %}
+<div class="c-hero">
+	<article class="c-hero__entry">
+		<header class="c-hero__header">
+			<figure class="caret">
+				<img src="{{site.assets}}/icon-caret.svg" alt="">
+			</figure>
+			<h1 class="c-hero__title">{{page.title}}</h1>
+			<h2 class="c-hero__tag">{{page.tag}}</h2>
+		</header>
+	</article>
+</div>
+{% endif %} 

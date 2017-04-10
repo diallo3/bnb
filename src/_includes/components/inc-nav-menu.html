@@ -1,0 +1,11 @@
+<menu class="c-menu c-menu--main u-float-right">
+	{% assign  items = site.pages | sort: "nav-weight" %}
+		{% for item in items %}
+    		{% unless item.exclude %}
+				<li class="c-menu__item">
+					<a href="{{base}}{{item.url}}" class="c-menu__link {% if item.url == page.url %}active{% endif %}">{{ item.nav-item }}</a>
+				</li>
+			{% endunless %}
+		{% endfor %}
+	<li class="c-menu__item"><a href="#" class="o-cta o-cta--ask">Schedule a service</a></li>
+</menu>
