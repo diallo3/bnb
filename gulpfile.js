@@ -156,6 +156,12 @@ gulp.task('server', ['build'], function() {
   });
 });
 
+// deploy to gh-pages
+gulp.task('deploy', function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
+});
+
 // Build the site, run the server, and watch for file changes
 gulp.task('default', ['build', 'server'], function() {
   gulp.watch(PATHS.assets, ['copy']);
