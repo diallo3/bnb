@@ -34,7 +34,7 @@ layout: default
 		</header>
 
 		<div class="c-content__entry">
-			{% for service in site.data.services limit: 1 %}
+			{% for service in site.data.services %}
 				{% include components/card-main.html %}
 			{% endfor %}
 		</div>
@@ -61,4 +61,4 @@ layout: default
 	</div>
 </div>
 
-
+{% include components/inc-testimonials.html %}

@@ -1,0 +1,34 @@
+<div id="testimonials" class="c-testimonial-container l-block" role="region" aria-label="Testimonials">
+	<div class="c-testimonial">
+		<div class="l-wrap">
+			<div id="slideTestimonials">
+				<ul class="slide-container">
+					{% for test in site.data.testimonials %}
+					<li class="item">
+						<figure class="c-testimonial__img">
+							<img src="http://lorempixel.com/200/200/people" />
+						</figure>
+						<blockquote class="c-testimonial__entry">
+							<header class="c-testimonial__header">
+								<h4 class="c-testimonial__title">{{test.title}}</h4>
+							</header>
+						
+							<p>"{{test.content}}"</p>
+						
+							<cite class="c-testimonial__cite">
+								<p>- {{test.cite}}</p>
+							</cite>
+						</blockquote>
+					</li>
+					{% endfor %}
+
+					<nav class="o-bullets">
+						{% for test in site.data.testimonials %}
+					  	<button class="" data-slide="{{test.slide}}"></button>
+					  	{% endfor %}
+					</nav>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>

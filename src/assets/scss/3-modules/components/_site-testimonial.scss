@@ -1,0 +1,64 @@
+$test: c-testimonial;
+
+.#{$test}-container {
+	background-color: darken($s-button, 3%);
+	padding: 1em; 
+	
+}
+
+.#{$test} {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 5em 0; 
+    position: relative;
+    @include breakpoint(large) {
+    	max-width: 60rem;
+    }
+    * {
+    	color: $white;
+    }
+    &__title {
+    	@include header-size(h2);
+    }
+	&::before, &::after {
+		content: "";
+		background: url("#{$imgPath}/icon-quote-lt.svg") no-repeat 0 0;
+		-webkit-background-size: contain; 
+		-o-background-size: contain; 
+		background-size: contain; 
+		width: 70px;
+		height: 70px;  
+		position: absolute;
+		top: 0;
+		left: 0.9375rem;  
+	}
+	&::after {
+		background-image: url("#{$imgPath}/icon-quote-rt.svg");
+		top: auto;
+		right: 0.9375rem;
+		left: auto;
+		bottom: 0; 
+	}
+	&__img {
+		@include grid-col(12);
+		@include breakpoint(large) {
+			@include grid-col(3)
+		}
+	}
+	&__entry {
+		@include grid-col(12);
+		margin: 0; 
+		@include breakpoint(large) {
+			@include grid-col(9)
+		}
+	}
+	.slide-container {
+		list-style-type: none;
+		@include zero-out; 
+	}
+}
+
+.o-bullets {
+	@include orbit-bullets;
+	@include abs-pos($r: 0, $b: -10px, $l: 0);
+}

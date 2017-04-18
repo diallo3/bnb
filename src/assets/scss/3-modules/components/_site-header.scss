@@ -3,13 +3,51 @@
   Site header
 */
 
+.home {
+	.o-logo__brand {
+		opacity: 0;
+		-webkit-transition: all 0.3s ease-in-out; 
+		-moz-transition: all 0.3s ease-in-out; 
+		-ms-transition: all 0.3s ease-in-out; 
+		-o-transition: all 0.3s ease-in-out; 
+		transition: all 0.3s ease-in-out; 
+	}
+	.sticky {
+		.o-logo__brand {
+			opacity: 1; 
+		}
+	}
+}
+
 // components
 .c-header-container {
 	background-color: black(0.15);
 	padding: 1em 0 0; 
+	width: 100%; 
 	min-height: 75px; 
 	position: absolute;
 	z-index: 1; 
+	&.sticky {
+		position: fixed;
+	}
+}
+
+.c-site-header {
+	.c-menu__item {
+		margin-right: 0.5em 
+	}
+	.c-menu__link {
+		font-size: rem-calc(14);
+		border-color: transparent; 
+		border-width: 2px; 
+		border-style: solid; 
+		border-radius: 80px;  
+		padding: 0.8em 0.8em;
+		&:hover {
+			background-color: darken($s-primary, 10%); 
+			border-color: rbga($white, 0.9); 
+		}
+	}
 }
 
 
