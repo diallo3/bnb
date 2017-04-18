@@ -32,10 +32,18 @@ $site: c-site-footer;
 			@include grid-col(6);
 		}
 	}
+	&__nav {
+		display: none;
+		@include breakpoint(large) {
+			display: block;
+		}
+	}
 
 	&__copyright {
 		p {
+			color: $white;
 			text-align: center;
+			padding: .8em 0;
 			@include breakpoint(large) {
 				text-align: right;
 			}

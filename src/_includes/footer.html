@@ -45,9 +45,9 @@
 	<footer class="c-site-footer l-wrap">
 		{% include components/inc-nav-footer.html %}
 		<div class="c-site-footer__copyright">
-			<p>cccc</p>
+			<p>{{site.title}} 	&copy; Copyright {{ 'now' | date: "%Y" }}</p>
 		</div>
 	</footer>
 </div>
-
+{% include components/inc-mobile-nav.html %}
 {% include foot.html %}

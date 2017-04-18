@@ -41,8 +41,10 @@ $test: c-testimonial;
 	}
 	&__img {
 		@include grid-col(12);
+		display: none;
 		@include breakpoint(large) {
 			@include grid-col(3)
+			display: block;
 		}
 	}
 	&__entry {

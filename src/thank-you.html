@@ -1,0 +1,61 @@
+---
+title: Thank You
+tag: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+nav-item: Thank You
+nav-weight: 20
+description: Thank you for your inquiry. 
+exclude: true
+slug: thank-you
+layout: default
+---
+
+<div class="c-content-container l-block">
+	<div class="c-content c-content--index l-wrap">
+		<article class="c-content__entry">
+			<header class="content__header">
+				<h1 class="c-content__title">We Appreciate it.</h1>
+			</header>
+
+			<p>We have received your message and would like to thank you for writing to us. We will reply by email shortly.</p>
+
+			<footer class="c-content__footer">
+				<form name="redirect">
+					You will be redirected to the script in <input class="rdr" type="text" size="3" name="redirect2"> seconds
+				</form>
+			</footer>
+		</article>
+		<script>
+			<!--
+				var targetURL="/"
+				var countdownfrom=10
+				var currentsecond=document.redirect.redirect2.value=countdownfrom+1
+
+				function countredirect(){
+					if (currentsecond!=1) {
+						currentsecond-=1
+						document.redirect.redirect2.value=currentsecond
+					} else {
+						window.location=targetURL
+						return
+					}
+					setTimeout("countredirect()",1000)
+				}
+
+				countredirect()
+			//-->
+		</script>
+	</div>
+</div>
+
+<div class="c-services-container">
+	<div class="c-content l-wrap">
+		<div class="c-content__entry">
+			<div id="formContainer" class="o-form o-form-contact">
+				{% include parts/prt-form-default.html %}
+			</div>
+		</div>
+	</div>
+</div>
+
+{% include components/inc-testimonials.html %}
+

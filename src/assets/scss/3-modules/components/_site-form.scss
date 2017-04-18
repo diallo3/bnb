@@ -1,0 +1,331 @@
+#successBlock {
+    @include abs-pos($t:0, $r:0, $b:0, $l:0);
+    text-align: center;
+    background-color: rgba($s-primary, .8);
+    padding: 1em;
+    * {
+        color: $white;
+    }
+    p {
+        font-size: rem(26); 
+    }
+}
+
+#formContainer {
+    .entry {
+        text-align: left;
+        padding-top: 1em;
+    }
+    .field-container {
+        @include grid-row;
+        [class*="form-"] {
+            @include breakpoint(large) {
+                @include grid-col(6, 30px);
+            }
+        }
+    }
+}
+
+.cd-form {
+    @include clearfix;
+    @include breakpoint(medium) {
+        legend + div {
+            /* reduce margin-top for first form element after the legend */
+            margin-top: 20px;
+        }
+
+        h4, .cd-label {
+            font-size: rem(14);
+            margin-bottom: 10px;
+        }
+
+        input[type="text"], input[type="email"], textarea, select {
+            padding: 20px;
+        }
+    }
+    margin: 0 auto;
+    padding-bottom: 1em;
+    * {
+        color: $white;
+    }
+
+    fieldset {
+        @include zero-out;
+        border: none;
+    }
+
+    legend {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+    }
+
+    h4, .cd-label {
+        font-size: rem(14);
+        margin-bottom: 10px;
+    }
+
+    .icon {
+        position: relative;
+    }
+
+    .cd-label {
+        display: block;
+    }
+
+    input, textarea, select, label {
+        color: $s-primary;
+        font-size: rem(17);
+    }
+
+    input[type="text"], input[type="email"], input[type="tel"], textarea, select, legend {
+        // @include appearance(none);
+        width: 100%;
+        display: block;
+    }
+
+    input[type="text"], input[type="email"], input[type="tel"], textarea, select {
+        box-shadow: inset 0 1px 1px rgba($black, .08);
+        border: 1px solid rgba($black, .3);
+        border-radius: .25em;
+        /* general style for input elements */
+        padding: 18px;
+
+        &:focus {
+            color: lighten($s-primary, 5%);
+            outline: none;
+            background-color: $white(.95);
+            box-shadow: 0 0 5px rgba($black, .2);
+            border-color: lighten($white, 30%);
+        }
+    }
+
+    .message {
+        min-height: 238px;
+        overflow: auto;
+
+        resize: vertical;
+    }
+
+    .submit-container {
+        @include clearfix;
+        text-align: center; 
+        clear: both;
+        position: relative;
+    }
+
+
+
+    [required] {
+        background: url("../img/cd-required.svg") no-repeat top right;
+    }
+
+    .error-message p {
+        color: $alert-color;
+        font-size: rem(15);
+        text-align: center;
+        background: #c00;
+        border-radius: .25em;
+        margin: 0 !important;
+        padding: 16px;
+    }
+
+    .error {
+        border-color: #c00 !important;
+    }
+}
+
+.submit {
+    color: darken($light-gray, 10%); 
+    font-size: rem(18);
+    text-transform: uppercase;
+    border: 1px solid $light-gray; 
+    padding: 1em 2.5em;
+
+    cursor: pointer;
+    &:hover, &:focus {
+        color: $white;
+        outline: none;
+        background: $s-primary;
+    }
+}
+
+.page-content {
+    .submit {
+        background-color: $button-color;
+        &:hover, &:focus {
+            background: $s-primary;
+        } 
+    }
+}
+
+// @include keyframes(cd-bounce) {
+//     0%, 100% {
+//         @include transform(scale(1));
+//     }
+
+//     50% {
+//         @include transform(scale(.8));
+//     }
+// }
+
+/* -------------------------------- 
+Custom icons
+-------------------------------- */
+
+.cd-form {
+    .icon input, .icon select, .icon textarea {
+        padding-left: 54px !important;
+    }
+
+    .user {
+        background: $form-input url("../img/cd-icon-user.svg") no-repeat 16px center;
+    }
+
+    [required].user {
+        background: $form-input url("../img/cd-icon-user.svg") no-repeat 16px center,
+        url("../img/cd-required.svg") no-repeat top right;
+    }
+
+    .tel {
+        background: $form-input url("../img/cd-icon-phone.svg") no-repeat 16px center;
+    }
+
+    [required].tel {
+        background: $form-input url("../img/cd-icon-phone.svg") no-repeat 16px center,
+        url("../img/cd-required.svg") no-repeat top right;
+    }
+
+    .email {
+        background: $form-input url("../img/cd-icon-email.svg") no-repeat 16px center;
+    }
+
+    [required].email {
+        background: $form-input url("../img/cd-icon-email.svg") no-repeat 16px center,
+        url("../img/cd-required.svg") no-repeat top right;
+    }
+
+    .message {
+        background: $form-input url("../img/cd-icon-message.svg") no-repeat 16px 16px;
+    }
+
+    [required].message {
+        background: $form-input url("../img/cd-icon-message.svg") no-repeat 16px 16px,
+        url("../img/cd-required.svg") no-repeat top right;
+    }
+}
+
+/* -------------------------------- 
+FLoating labels 
+-------------------------------- */
+$label-pos: 18px;
+    
+.floating-labels {
+    @include breakpoint(medium) {
+        legend + div {
+            /* reduce margin-top for first form element after the legend */
+            margin-top: 16px;
+        }
+
+        .cd-label {
+            top: 20px;
+        }
+    }
+    [class*="form-"] div {
+        margin: 28px 0;
+    }
+
+    .cd-label {
+        @include transition(top .2s, left .2s, font-size .2s);
+        color: rgba($white, .5);
+        font-size: rem(17);
+        position: absolute;
+        top: $label-pos;
+        left: $label-pos;
+
+        cursor: text;
+    }
+
+    .icon {
+        .cd-label {
+            left: 56px;
+        }
+        .error {
+            @include abs-pos($t: -$label-pos, $r: 0);
+            color: $s-primary;
+        } 
+        &.has-error {
+            .cd-label {
+                color: $s-primary;
+            }
+            input[type="text"], input[type="email"], input[type="tel"], textarea, select {
+                color: $s-primary;
+                border-color: $s-primary; 
+            }
+        }
+        &.has-success {
+            .cd-label {
+                color: $s-primary;
+            }
+            input[type="text"], input[type="email"], input[type="tel"], textarea, select {
+                color: $s-primary;
+                border-color: $s-primary; 
+            }
+        }
+    }
+
+    .cd-label.float {
+        /* move label out the input field */
+        font-size: rem(11);
+        font-weight: 500;
+        top: -$label-pos;
+        left: 0 !important;
+    }
+}
+
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+    outline: none;
+    background-color: lighten($white, 10%);
+    box-shadow: 0 0 5px rgba($black, .2);
+    border-color: lighten($white, 30%);
+}
+
+input.rdr {
+    outline: 0;
+    background: none;
+    border: none;
+    width: 20px;
+}
+
+.o-form {
+    .cd-form {
+        input[type="text"], input[type="email"], input[type="tel"], textarea, select {
+            color: black(0.5);
+            background-color: $white;
+            box-shadow: inset 0 1px 1px rgba($black, .08);
+            border-color: darken($light-gray, 20%);
+
+            &:focus {
+                color: $s-primary;
+                outline: none;
+                background-color: $white(.95);
+                box-shadow: 0 0 5px rgba($black, .2);
+                border-color: $s-primary;
+            }
+        }
+        .o-cta--inv {
+            color: $s-button;
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+    .floating-labels {
+        .cd-label {
+            color: $dark-gray;
+            display: block;
+            width: auto; 
+        }
+    }
+   
+}

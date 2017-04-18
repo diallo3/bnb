@@ -4,7 +4,10 @@ $hero: c-hero;
 
 .#{$hero} {
 	text-align: center;
-	background: $s-primary;
+	background: $s-primary url(#{$imgPath}/bck-main.jpg) no-repeat 50% 50%;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 	padding: 8rem 3rem; 
 	width: 100%;
 	display: block;

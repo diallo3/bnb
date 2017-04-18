@@ -1,0 +1,20 @@
+<nav>
+	<ul class="cd-primary-nav">
+		<li class="nav-item"><a href="#" class="o-cta">Schedule a service</a></li>
+		{% assign  items = site.pages | sort: "nav-weight" %}
+		{% for item in items %}
+			{% unless item.exclude %}
+			<li class="nav-item">
+				<a class="o-cta o-cta--ask" href="{{base}}{{ item.url }}" {% if item.url == page.url %}class="active"{% endif %}>{{ item.nav-item }}</a>
+			</li>
+			{% endunless %}
+		{% endfor %}
+		
+		<!-- <li class="cd-label">
+			<div class="media">
+				<span class=""><a href="mailto:{{ site.email }}?subject=Inquiry" "email me">{{ site.email }}</a></span>
+			</div>	
+
+		</li> -->
+	</ul>
+</nav>
