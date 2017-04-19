@@ -23,15 +23,3 @@ $typi: (
   	),
 );
 
-@include headings() {
-  font-family: $quicksand; 
-  font-weight: 400; 
-  text-transform: uppercase ;
-  letter-spacing: letter-spacing(180);
-  margin: 0 0 $global-margin; 
-}
-
-p {
-	@include typi(basic);
-	margin: 0 0 $global-margin; 
-}

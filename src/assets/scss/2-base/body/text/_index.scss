@@ -1,3 +1,21 @@
+html, body {
+	font-family: $lato; 
+}
+
+@include headings() {
+  font-family: $quicksand; 
+  font-weight: 400; 
+  text-transform: uppercase ;
+  letter-spacing: letter-spacing(180);
+  margin: 0 0 $global-margin; 
+}
+
+p {
+	@include typi(basic);
+	color: darken($dark-gray, 20%);
+	margin: 0 0 $global-margin; 
+}
+
 // Links
 a {
 	&:link, &:active, &:visited {
