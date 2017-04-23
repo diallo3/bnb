@@ -35,6 +35,7 @@ $card: c-card;
 	}
 	&__footer {
 		@include abs-pos($b: 0);
+		background-color: lighten($light-gray, 6%); 
 		border-top: 1px solid $light-gray; 
 		padding-top: rem-calc(5) ;
 		padding-bottom: rem-calc(5);
@@ -71,10 +72,10 @@ $card: c-card;
 
 	.#{$card}__item {
 		&:first-child {
-			@include grid-col(3);
+			@include grid-col(5);
 		}
 		&:last-child {
-			@include grid-col(9);
+			@include grid-col(7);
 		}
 	}
 }
@@ -101,6 +102,34 @@ $card: c-card;
 			@include grid-row;
 			padding-top: .5em;
 			padding-bottom: .5em; 
+		}
+	}
+}
+
+.o-extras {
+	@include menu-nav;
+	@include menu-list;
+	&__item:first-child {
+		margin-right: 1em; 
+	}
+
+	&__link {
+		@include circle(50px, $white);
+		text-align: center;
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		-webkit-background-size: cover; 
+		 -o-background-size: cover; 
+		 background-size: cover;
+		border: 1px solid rgba($s-primary, 0.3);   
+		padding: 1em; 
+		display: inline-block;
+		overflow: hidden;
+		&.cruelty {
+			background-image: url('#{$imgPath}/img-cruelty.png');
+		}
+		&.recycle {
+			background-image: url('#{$imgPath}/img-recycle.png');
 		}
 	}
 }

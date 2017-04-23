@@ -8,12 +8,11 @@
   price: "1,200"
   image: ""
   link: "http://google.com"
-
   excerpt: "From top to bottom, ceiling fan to baseboards, we’ll have that baby sparkling in no time!  Betweenbnb believes in a Green and Animal Friendly world. That’s why we only use products that are green, organic, and animal friendly. Check out our arsenal!"
   extras:
-    - animal: "true"
-    - recycle: "true"
-  popular: "true"
+    - popular: "no"
+    - animal: "no"
+    - recycle:
 
 # Service 2 #####################################
 - service: 
@@ -22,14 +21,13 @@
   price: "1,500"
   image: ""
   link: "http://google.com"
-
   excerpt: 
-    - "Our Spotless Cleaning Service before AND after your guests come and go. We bring OUR OWN high-quality sheets, towels, and spa toiletries for guest’s stay. Everything is stocked (TP, Paper Towels, Trash Bags, etc.). Guests are welcomed by a gift basket with hand-written card, Illy coffee, tea, bottled water and more!"
-    - "Basically, you collect the check and 5 Star Rating, we’ll do the rest!"
+  - "Our Spotless Cleaning Service before AND after your guests come and go. We bring OUR OWN high-quality sheets, towels, and spa toiletries for guest’s stay. Everything is stocked (TP, Paper Towels, Trash Bags, etc.). Guests are welcomed by a gift basket with hand-written card, Illy coffee, tea, bottled water and more!"
+  - "Basically, you collect the check and 5 Star Rating, we’ll do the rest!"
   extras:
-    - animal: "true"
+    - popular: "no"
+    - animal: "yes"
     - recycle: "true"
-  popular: "true"
 
 # Service 3 #####################################
 - service: 
@@ -38,11 +36,10 @@
   price: "1,200"
   image: ""
   link: "http://google.com"
-
   excerpt: "Add on to any Spotless Cleaning or Hassle-Free Hosting Service! Add-ons include wash, dry, fold laundry service, deep clean of inside cabinets, refrigerator, oven or inside windows… all of course with our green, organic, and animal-friendly products!"
   extras:
-    - animal: "true"
+    - popular: "no"
+    - animal: "yes"  
     - recycle: "true"
-  popular: "true"
 
 

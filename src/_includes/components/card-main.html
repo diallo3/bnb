@@ -7,6 +7,7 @@
 			<div class="c-card__desc">
 				<header class="c-card__header">
 					<h3 class="c-card__title">
+						
 						<a href="{{service.link}}">{{service.title}}</a>
 					</h3>
 					<h4 class="c-card__tag">{{service.tag}}</h4>
@@ -17,9 +18,20 @@
 			<footer class="c-card__footer">
 				<div class="c-card__actions">
 					<div class="c-card__item">
-						<p class="u-no-margin">
-							<span class="c-card__cur">$<strong>{{service.price}}</strong></span>
-						</p>
+						{% for content in service.extras %}
+							<ul class="o-extras">
+								{% if content.animal == "yes" %}
+									<li class="o-extras__item"><span class="o-extras__link cruelty">&nbsp;</span></li>
+								{% endif %}
+								{% if content.animal == "yes" %}
+									<li class="o-extras__item"><span class="o-extras__link recycle">&nbsp;</span></li>
+								{% endif %}
+							</ul>
+						{% endfor %}
+						
+						<!-- <p class="u-no-margin">
+							<span class="c-card__cur">$<strong>{{service.price}}</strong></span> 
+						</p> -->
 					</div>
 					<div class="c-card__item">
 						<p class="u-no-margin u-text-right"><a href="{{service.link}}" class="o-cta o-cta--small" title="Schedule {{service.title}}">Schedule Service</a></p>

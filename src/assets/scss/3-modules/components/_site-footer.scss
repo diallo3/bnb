@@ -8,7 +8,7 @@ $site: c-site-footer;
 }
 
 .c-footer-container {
-	background-color: darken($s-primary, 10%);
+	background-color: $s-primary;
 	padding: 0.8em 0;  
 }
 

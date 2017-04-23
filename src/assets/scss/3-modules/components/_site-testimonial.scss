@@ -1,7 +1,7 @@
 $test: c-testimonial;
 
 .#{$test}-container {
-	background-color: darken($s-button, 3%);
+	background-color: lighten($s-tertiary, 3%);
 	padding: 1em; 
 	
 }

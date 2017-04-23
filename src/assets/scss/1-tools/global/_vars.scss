@@ -1,10 +1,11 @@
 // 1. Colors
-$s-primary:     #0CA0B2;
-$s-secondary:   #24B1C0;
-$s-tertiary:    #EEA625;
+$s-primary:     #11A7B8; //#0CA0B2
+$s-secondary:   #0CA0B2; //#24B1C0
+$s-tertiary:    #B08D44; //#EEA625
 $s-accent:      #4A90E2;
+$-s-gray:       #585858;
 
-$s-button:      #FDA853;
+$s-button:      lighten($s-tertiary, 8%); //#FDA853
 
 $alt-primary:   #819C9F;
 $alt-secondary: #D0011B;

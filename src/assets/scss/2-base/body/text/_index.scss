@@ -6,13 +6,13 @@ html, body {
   font-family: $quicksand; 
   font-weight: 400; 
   text-transform: uppercase ;
-  letter-spacing: letter-spacing(180);
+  letter-spacing: letter-spacing(80);
   margin: 0 0 $global-margin; 
 }
 
 p {
 	@include typi(basic);
-	color: darken($dark-gray, 20%);
+	color: darken($dark-gray, 0%);
 	margin: 0 0 $global-margin; 
 }
 

@@ -5,15 +5,15 @@
 
 .o-cta {
 	@include button(
-		$background: $s-button, 
-		$background-hover: darken($s-button, 20%), 
-		$color: $white, 
+		$background: $white, 
+		$background-hover: lighten($s-primary, 3%), 
+		$color: $s-primary, 
 		$style: solid
 	);
 	font-size: rem-calc(14);
 	font-weight: 700; 
 	text-transform: uppercase;
-	border-color: $white; 
+	border-color: $s-primary; 
 	border-width: 2px; 
 	border-style: solid; 
 	border-radius: 80px;  
@@ -26,13 +26,14 @@
 	&--ghost, &--ask {
 		@include button-style($background-hover: $s-button, $color: $white);
 		@include button-hollow;
+		border-color: $white; 
 		&:hover {
-			background-color: $s-button !important;
+			background-color: darken($s-primary, 5%) !important;
 		}
 	}
 	&--inv {
-		@include button-style($background: $white, $color: $s-button);
-		border-color: $s-button;
+		@include button-style($background: $white, $color: $s-primary);
+		// border-color: lighten($s-button, 3%);
 		&:hover {
 			color: $white;
 			background-color: $s-button; 
@@ -44,10 +45,11 @@
 	}
 	&--small {
 		font-size: rem-calc(12);
-		border-width: 0; 
+		border-width: 1px; 
 		border-radius: 5px;
 		&:hover {
-			background-color: $alt-tertiary;
+			color: $white;
+			background-color: darken($s-primary, 3%);
 		}
 	}
 }
