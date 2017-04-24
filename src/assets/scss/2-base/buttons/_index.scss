@@ -19,17 +19,20 @@
 	border-radius: 80px;  
 	padding: 1em 2.5em;
 	width: auto; 
+	&:hover {
+		color: $white;
+		background-color: lighten($s-tertiary, 20%) !important;
+		border-color: $white; 
+	}
 	&--primary {
 		@include typi(cta);
+		background-color: $white; 
 		padding: rem-calc(15 60);
 	}
 	&--ghost, &--ask {
 		@include button-style($background-hover: $s-button, $color: $white);
 		@include button-hollow;
 		border-color: $white; 
-		&:hover {
-			background-color: darken($s-primary, 5%) !important;
-		}
 	}
 	&--inv {
 		@include button-style($background: $white, $color: $s-primary);

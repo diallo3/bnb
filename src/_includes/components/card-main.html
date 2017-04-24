@@ -1,8 +1,5 @@
 <div class="c-card c-card--side">
 	<div class="c-card__wrap" style="background-image: url('http://lorempixel.com/800/600/people');">
-		<!-- <figure class="c-card__feature">
-			<img src="http://placehold.it/800" alt="">
-		</figure> -->
 		<article class="c-card__entry">
 			<div class="c-card__desc">
 				<header class="c-card__header">
@@ -13,7 +10,9 @@
 					<h4 class="c-card__tag">{{service.tag}}</h4>
 				</header>
 				
-				<p>{{service.excerpt}}</p>
+				<section class="c-card__content">
+					<p>{{service.excerpt}}</p>
+				</section>
 			</div>
 			<footer class="c-card__footer">
 				<div class="c-card__actions">
@@ -34,7 +33,7 @@
 						</p> -->
 					</div>
 					<div class="c-card__item">
-						<p class="u-no-margin u-text-right"><a href="{{service.link}}" class="o-cta o-cta--small" title="Schedule {{service.title}}">Schedule Service</a></p>
+						<p class="u-no-margin u-text-right"><a href="{{service.link}}" class="o-cta o-cta--small" title="Schedule {{service.title}}">{{site.cta_header}}</a></p>
 					</div>
 				</div>
 			</footer>

@@ -1,20 +1,6 @@
 #Services
 
-
 # Service 1 #####################################
-- service: 
-  title: "Spotless Cleaning Service"
-  tag: "We’ve got every room covered!"
-  price: "1,200"
-  image: ""
-  link: "http://google.com"
-  excerpt: "From top to bottom, ceiling fan to baseboards, we’ll have that baby sparkling in no time!  Betweenbnb believes in a Green and Animal Friendly world. That’s why we only use products that are green, organic, and animal friendly. Check out our arsenal!"
-  extras:
-    - popular: "no"
-    - animal: "no"
-    - recycle:
-
-# Service 2 #####################################
 - service: 
   title: "Hassle-Free Hosting Service"
   tag: "You Won’t Lift a Finger"
@@ -28,6 +14,21 @@
     - popular: "no"
     - animal: "yes"
     - recycle: "true"
+
+# Service 2 #####################################
+- service: 
+  title: "Spotless Cleaning Service"
+  tag: "We’ve got every room covered!"
+  price: "1,200"
+  image: ""
+  link: "http://google.com"
+  excerpt: "From top to bottom, ceiling fan to baseboards, we’ll have that baby sparkling in no time!  Betweenbnb believes in a Green and Animal Friendly world. That’s why we only use products that are green, organic, and animal friendly. Check out our arsenal!"
+  extras:
+    - popular: "no"
+    - animal: "no"
+    - recycle:
+
+
 
 # Service 3 #####################################
 - service: 

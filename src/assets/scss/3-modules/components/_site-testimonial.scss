@@ -46,6 +46,9 @@ $test: c-testimonial;
 			@include grid-col(3)
 			display: block;
 		}
+		img {
+			border: 5px solid rgba($white, 0.2);
+		}
 	}
 	&__entry {
 		@include grid-col(12);
@@ -62,5 +65,15 @@ $test: c-testimonial;
 
 .o-bullets {
 	@include orbit-bullets;
-	@include abs-pos($r: 0, $b: -10px, $l: 0);
+	@include abs-pos($r: 0, $b: -40px, $l: 0);
+	.item {
+		@include grid-row;
+		border: 1px solid #c00;
+	}
+	button {
+		border: 2px solid $s-tertiary; 
+	}
+	.is-active {
+		border: 2px solid $white; 
+	}
 }

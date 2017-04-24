@@ -7,7 +7,8 @@
     	slideClass: 'item',
     	prevClass: 'item-previous',
     	nextClass: 'item-next',
-    	bullets: true
+    	bullets: true,
+    	boxOfBullets: 'o-bullets'
     });
 
     // hamburger
