@@ -81,3 +81,36 @@
 		overflow: hidden;
 	}
 }
+
+
+.o-mini-cart {
+	div.ecwid-minicart {
+		background-color: #c00 !important; 
+	}
+	div.ecwid-minicart-counter {
+	    position: absolute;
+	    left: 7px;
+	    top: 13px;
+	    width: 34px;
+	    font-size: 14px !important;
+	    font-weight: 400;
+	    line-height: 28px;
+	    color: #333;
+	    text-align: center;
+	    cursor: pointer;
+	    zoom: 1;
+    }
+    div.ecwid-minicart-clickArea {
+    	-webkit-background-size: contain !important; 
+    	-o-background-size: contain !important; 
+    	background-size: contain !important; 
+        margin: 8px 0 0 8px !important; 
+    	width: 20px !important;
+    	height: 29px !important;  
+    	position: static !important;
+    }
+    div.ecwid-minicart-caption {
+ 		position: static;
+    }
+}
+

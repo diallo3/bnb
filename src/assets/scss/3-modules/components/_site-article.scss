@@ -31,11 +31,35 @@ $con: c-content;
 			  	margin: 0 auto;
 			}
 		}
+		&.full {
+			@include grid-col(10);
+			@include grid-column-position(center);
+		}
 		h1 {
 			@include header-size(h1);
 		}
 		h2 {
 			@include header-size(h2);
+		}
+	}
+	&__product {
+		@include grid-row;
+	}
+	&__prop {
+		@include grid-col(12);
+		text-align: left;
+		@include breakpoint(large) {
+			@include grid-col(8);
+		}
+		.o-featured {
+			border: 5px solid $light-gray;
+			margin-bottom: 2em;  
+		}
+	}
+	&__form {
+		@include grid-col(12);
+		@include breakpoint(large) {
+			@include grid-col(4);
 		}
 	}
 }

@@ -329,3 +329,59 @@ input.rdr {
     }
    
 }
+
+
+// ECWID
+#ecwid_body {
+    .ecwid-Product {
+        border: 1px solid $light-gray !important;
+        padding: 0 !important;
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+    .ecwid-fieldLabel {
+        font-size: rem(13) !important;
+        text-align: left !important;
+    }
+    .ecwid-price {
+        color: $white !important;
+        background-color: $s-tertiary !important; 
+        margin: 0 !important;
+        padding: 1em 0.5em !important;
+    }
+    .ecwid-fieldLabel {
+        color: darken($dark-gray, 10%) !important;
+    }
+    .ecwid-SingleProduct-qty {
+        background-color: $light-gray !important; 
+        border-bottom: 1px solid $white !important;
+        margin: 0 !important;
+        padding: 1.5em 0.5em !important;
+    }
+    .ecwid-addto {
+        background-color: $s-primary !important; 
+        margin: 0 !important;
+        padding: 1.5em 0.5em !important;
+    }
+    .ecwid-btn {
+        color: $white !important;
+        font-weight: bold !important;
+        text-transform: uppercase !important;
+        background-color: $s-primary !important;
+        border: 2px solid $white !important;
+        -webkit-border-radius: 80px !important;
+        border-radius: 80px !important;
+        -webkit-box-shadow: none !important ;
+        box-shadow: none !important ;
+        &:hover {
+            color: $white !important;
+            border-color: $white !important;
+            background-color: $s-tertiary !important;
+        }
+    }
+    input, textarea, select {
+        color: darken($dark-gray, 20%) !important;
+        font-size: rem(17) !important;
+    }
+}
+

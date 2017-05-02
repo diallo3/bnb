@@ -1,0 +1,44 @@
+<section class="c-content__product">
+	<div class="c-content__prop">
+		<figure class="o-featured">
+			<img src="{{site.assets}}{{s.feature-image}}" alt="{{s.title}}">
+		</figure>
+		<p class="o-excerpt">{{s.excerpt}}</p>
+
+		<footer class="">
+			<div class="c-card__actions">
+				<div class="c-card__item">
+					<hr class="u-rule">
+
+					{% assign c = s.extras %}
+						<ul class="o-extras">
+							{% if c.animal == true %}
+								<li class="o-extras__item"><span class="o-extras__link cruelty">&nbsp;</span></li>
+							{% endif %}
+							{% if c.recycle == true %}
+								<li class="o-extras__item"><span class="o-extras__link recycle">&nbsp;</span></li>
+							{% endif %}
+						</ul>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	<div class="c-content__form">
+		<div class="ecwid ecwid-SingleProduct-v2 ecwid-Product ecwid-Product-{{s.product-id}}" itemscope itemtype="http://schema.org/Product" data-single-product-id="{{s.product-id}}">
+			<div itemtype="http://schema.org/Offer" itemscope itemprop="offers">
+				<div class="ecwid-productBrowser-price ecwid-price" itemprop="price" content="100">
+					<div itemprop="priceCurrency" content="USD"></div>
+				</div>
+			</div>
+
+			<div class="ecwid-options" customprop="options"></div>
+			<div class="ecwid-qty" customprop="qty"></div>
+			<div class="ecwid-addto" customprop="addtobag"></div>
+		</div>
+
+		<script type="text/javascript" src="https://app.ecwid.com/script.js?{{ site.store }}&data_platform=singleproduct_v2" charset="utf-8"></script>
+		<script type="text/javascript">xProduct()</script>
+
+	</div>
+</section>

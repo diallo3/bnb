@@ -5,6 +5,8 @@ $hero: c-hero;
 .#{$hero} {
 	background-color: $s-primary;
 	text-align: center;
+	background-position: 50% 50%; 
+	background-repeat: no-repeat;
 	-webkit-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
@@ -18,11 +20,31 @@ $hero: c-hero;
 		}
 	}
 	&--main {
-		background:  url(#{$imgPath}/bck-main.jpg) no-repeat 50% 50%;
+		background-image:  url(#{$imgPath}/bck-main.jpg);
 		height: 100vh;
 		min-height: 600px;
 		.#{$hero}__entry {
 			@include center-align($ver: true, $hor: true, $pos: absolute);
+			width: 85%; 
+			@include breakpoint(large) {
+				width: 60%; 
+			}
+			.o-brand {
+				margin: 0 auto;
+				text-align: center;
+				.large {
+					display: none;
+					@include breakpoint(large) {
+						display: block;
+					}
+				}
+				.small {
+					display: block;
+					@include breakpoint(large) {
+						display: none;
+					}
+				}
+			}
 		}
 	}
 	&__footer {
@@ -32,7 +54,7 @@ $hero: c-hero;
 		@include header-size(h1);
 		color: $white;
 		text-shadow: 1px 1px black(0.1); 
-		text-transform: uppercase;
+		text-transform: capitalize;
 		margin-bottom: rem-calc(5); 
 	}
 	.#{$hero}__tag {

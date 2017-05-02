@@ -1,0 +1,27 @@
+---
+title: Hassle Free Hosting Service
+nav-item: test
+nav-weight: 0
+exclude: true
+description: Test
+
+service: 0
+product: 83701275
+layout: default
+---
+
+{% assign s = site.data.services.main[page.service] %}
+
+<div class="c-content-container l-block">
+	<div class="c-content c-content--index l-wrap">
+		<article class="c-content__entry full">
+			<header class="content__header">
+				<h2 class="c-content__title">{{s.tag}}</h2>
+			</header>
+			{% include parts/prt-service.html %}
+		</article>	
+
+	</div>
+</div>
+
+{% include components/inc-testimonials.html %}

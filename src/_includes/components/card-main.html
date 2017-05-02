@@ -1,5 +1,5 @@
 <div class="c-card c-card--side">
-	<div class="c-card__wrap" style="background-image: url('http://lorempixel.com/800/600/people');">
+	<div class="c-card__wrap" style="background-image: url('{{site.assets}}{{service.thumb-image}}');">
 		<article class="c-card__entry">
 			<div class="c-card__desc">
 				<header class="c-card__header">
@@ -17,16 +17,17 @@
 			<footer class="c-card__footer">
 				<div class="c-card__actions">
 					<div class="c-card__item">
-						{% for content in service.extras %}
+					<!-- <p>{{service.extras}}</p> -->
+						{% assign c = service.extras %}
 							<ul class="o-extras">
-								{% if content.animal == "yes" %}
+								{% if c.animal == true %}
 									<li class="o-extras__item"><span class="o-extras__link cruelty">&nbsp;</span></li>
 								{% endif %}
-								{% if content.animal == "yes" %}
+								{% if c.recycle == true %}
 									<li class="o-extras__item"><span class="o-extras__link recycle">&nbsp;</span></li>
 								{% endif %}
 							</ul>
-						{% endfor %}
+	
 						
 						<!-- <p class="u-no-margin">
 							<span class="c-card__cur">$<strong>{{service.price}}</strong></span> 

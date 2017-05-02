@@ -15,7 +15,9 @@ layout: default
 				<h1 class="c-content__title">No Hassel Hosting!</h1>
 			</header>
 
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis voluptatibus libero nulla quae explicabo odio, laborum expedita iste quaerat nihil nisi minus. Obcaecati dolorum repellendus incidunt facilis, nesciunt nihil, cupiditate.</p>
+			<section class="o-opening">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis voluptatibus libero nulla quae explicabo odio, laborum expedita iste quaerat nihil nisi minus. Obcaecati dolorum repellendus incidunt facilis, nesciunt nihil, cupiditate.</p>
+			</section>
 
 			<footer class="c-content__footer">
 				<p><a href="#"></a></p>
@@ -33,13 +35,13 @@ layout: default
 		</header>
 
 		<div class="c-content__entry">
-			{% for service in site.data.services limit: 1 %}
+			{% for service in site.data.services.main limit: 1 %}
 				{% include components/card-main.html %}
 			{% endfor %}
 		</div>
 
 		<footer class="c-content__footer">
-			<p><a href="#" class="o-cta o-cta--inv">View All Services</a></p>
+			<p><a href="{{site.cta_url}}" class="o-cta o-cta--inv">View All Services</a></p>
 		</footer>
 	</div>
 </div>

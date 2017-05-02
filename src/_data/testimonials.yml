@@ -5,12 +5,14 @@
 - testimonial: 
   slide: 1
   title: "A real life-saver"
+  image: img-tsm-kate.jpg
   content: I travel for work a lot, but rarely have the time to get my place ready for guests. Betweenbnb has been a life-saver! I make an extra income and come home to a beautifully cleaned home.
   cite: Kate
 
 - testimonial: 
   slide: 2
   title: "5-Star Ratings"
+  image: img-tsm-scott.jpg
   content: I have a number of properties in the city on Airbnb. Not only does Betweenbnb handle the key hand-off, but literally everything in between. My guests love it and I love the 5-Star Ratings!
   cite: Scott
 
@@ -18,5 +20,6 @@
 - testimonial: 
   slide: 3
   title: "Happy Guests"
+  image: img-tsm-hudgins.jpg
   content: Love! Love! Love it! We were traveling during our son’s birthday and our host hooked us up with Betweenbnb. They seriously couldn’t have made it more special. We arrived to a birthday cake, balloons and all kinds of activities for the kids. Oh, and wine for us! Highly recommend!
   cite: The Hudgins

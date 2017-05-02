@@ -49,7 +49,7 @@
 	&--small {
 		font-size: rem-calc(12);
 		border-width: 1px; 
-		border-radius: 5px;
+		border-radius: 80px;
 		&:hover {
 			color: $white;
 			background-color: darken($s-primary, 3%);

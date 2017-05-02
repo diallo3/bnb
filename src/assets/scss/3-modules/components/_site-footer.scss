@@ -13,7 +13,7 @@ $site: c-site-footer;
 }
 
 .#{$info} {
-	padding: 3em 0;
+	padding: 1.3em 0 0;
 	* {
 		color: $white;
 	} 
@@ -43,7 +43,7 @@ $site: c-site-footer;
 		p {
 			color: $white;
 			text-align: center;
-			padding: .8em 0;
+			padding: 0;
 			@include breakpoint(large) {
 				text-align: right;
 			}

@@ -29,9 +29,9 @@
 			</nav>
 			
 			<address class="o-main-address">
-				{{site.address.street}}<br/>
 				{{site.address.city}}, {{site.address.state}}<br/>
-				<a href="tel:+{{site.phone}}">{{site.phone}}</a>
+				<a href="tel:+{{site.phone}}">{{site.phone}}</a><br/>
+				<span class="email">{{ site.emailProtect }}</span>
 			</address>
 		</div>
 	</footer>
@@ -41,7 +41,7 @@
 	<footer class="c-site-footer l-wrap">
 		{% include components/inc-nav-footer.html %}
 		<div class="c-site-footer__copyright">
-			<p>{{site.title}} 	&copy; Copyright {{ 'now' | date: "%Y" }}</p>
+			<p>{{site.title}} &copy; Copyright {{ 'now' | date: "%Y" }}</p>
 		</div>
 	</footer>
 </div>

@@ -5,15 +5,21 @@ html, body {
 @include headings() {
   font-family: $quicksand; 
   font-weight: 400; 
-  text-transform: uppercase ;
   letter-spacing: letter-spacing(80);
   margin: 0 0 $global-margin; 
 }
 
-p {
+p, li {
 	@include typi(basic);
-	color: darken($dark-gray, 0%);
+	color: $s-gray;
+	line-height: 1.9 !important;
 	margin: 0 0 $global-margin; 
+}
+
+.o-opening {
+	p {
+		@include typi(opening);
+	}
 }
 
 // Links

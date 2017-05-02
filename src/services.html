@@ -12,11 +12,10 @@ layout: default
 <div class="c-content-container l-block">
 	<div class="c-content c-content--index l-wrap">
 		<article class="c-content__entry">
-			<!-- <header class="content__header">
-				<h1 class="c-content__title">No Hassel Hosting!</h1>
-			</header> -->
-
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis voluptatibus libero nulla quae explicabo odio, laborum expedita iste quaerat nihil nisi minus. Obcaecati dolorum repellendus incidunt facilis, nesciunt nihil, cupiditate.</p>
+			
+			<section class="o-opening">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis voluptatibus libero nulla quae explicabo odio, laborum expedita iste quaerat nihil nisi minus. Obcaecati dolorum repellendus incidunt facilis, nesciunt nihil, cupiditate.</p>
+			</section>
 
 			<footer class="c-content__footer">
 				<p><a href="#"></a></p>
@@ -31,7 +30,7 @@ layout: default
 	<div class="c-content l-wrap">
 
 		<div class="c-content__entry">
-			{% for service in site.data.services %}
+			{% for service in site.data.services.main %}
 				{% include components/card-main.html %}
 			{% endfor %}
 		</div>

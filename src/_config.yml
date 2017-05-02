@@ -8,20 +8,17 @@
 # Site settings
 title: Betweenbnb
 email: info@betweenbnb.com
+emailProtect: info [at] betweenbnb.com
 phone: (800) BNB-3317
 phone_link: 8002623317
 
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Betweenbnb is a hospitality services company specializing in property preparation on behalf of Airbnb hosts before guests arrival and after guests departure. 
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://betweenbnb.com" # the base hostname & protocol for your site
 assets: assets/img/
 
-twitter_username: jekyllrb
-github_username:  jekyll
 
 tw: http://www.twitter.com/betweenbnb
 fb: http://facebook.com/betweenbnb
@@ -37,6 +34,7 @@ keep_files: [assets]
 
 # General 
 
+cta_url: services.html
 cta_header: Let's do this!
 cta_page: Get Started
 
@@ -45,5 +43,9 @@ address:
   street: 21 Beacon Street Suite 4B
   city: Boston
   state: MA
+
+# Store
+
+store: 11450045
 
 # Contact Form Elements
