@@ -1,6 +1,7 @@
 <nav class="l-menu l-menu--summary c-site-footer__nav">
 	<menu class="c-menu c-menu--recap">
-		<!-- <li class="c-menu__item"><a href="#" class="o-cta o-cta--ask">Schedule a service</a></li> -->
+		<li class="c-menu__item"><a href="terms-of-use.html" class="c-menu__link">Terms of use</a></li>
+		<li class="c-menu__item"><a href="privacy.html" class="c-menu__link">Privacy Policy</a></li>
 		{% for item in site.data.nav-footer %}
 			<li class="c-menu__item"><a href="{{ item.url }}" class="c-menu__link">{{ item.link }}</a></li>
 		{% endfor %}

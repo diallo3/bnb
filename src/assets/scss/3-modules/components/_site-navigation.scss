@@ -35,9 +35,6 @@ $menu: c-menu;
 		text-transform: uppercase;
 		padding: .81em .95em;
 		display: block;
-		&:hover {
-			background-color: #ddd; 
-		}
 		&.rd {
 			@include circle(50px, darken($s-primary, 5%));
 			border: 1px solid lighten($s-primary, 40%);
