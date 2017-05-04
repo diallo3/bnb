@@ -26,8 +26,16 @@
 	}
 	&--primary {
 		@include typi(cta);
+		color: $white; 
 		background-color: $white; 
+		background-color: lighten($s-tertiary, 20%) !important;
+		border-color: $white; 
 		padding: rem-calc(15 60);
+		&:hover {
+			color: $s-primary;
+			background-color: $white !important;
+			border-color: $s-primary;  
+		}
 	}
 	&--ghost, &--ask {
 		@include button-style($background-hover: $s-button, $color: $white);

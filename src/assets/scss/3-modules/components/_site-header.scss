@@ -71,6 +71,12 @@
 	}
 }
 
+.c-site-header-cart {
+	@include abs-pos($b: -113%);
+	height: 70px; 
+	width: 100%;  
+}
+
 
 // objects
 .o-logo {
@@ -84,9 +90,7 @@
 
 
 .o-mini-cart {
-	div.ecwid-minicart {
-		background-color: #c00 !important; 
-	}
+	div.ecwid-minicart {}
 	div.ecwid-minicart-counter {
 	    position: absolute;
 	    left: 7px;

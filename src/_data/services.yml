@@ -29,22 +29,6 @@ main:
     extras:
       popular: false
       animal: true
-      recycle:
-
-
-
-  - addons:
-    product-id: 83701275
-    title: Add-On Cleaning Services
-    tag: Want a little extra clean?
-    price: 1,200
-    feature-image: img-ser-add-collage.jpg
-    thumb-image: img-ser-add-thumb.jpg
-    link: service-addon-cleaning.html
-    excerpt: Add on to any Spotless Cleaning or Hassle-Free Hosting Service! Add-ons include wash, dry, fold laundry service, deep clean of inside cabinets, refrigerator, oven or inside windows… all of course with our green, organic, and animal-friendly products!
-    extras:
-      popular: false
-      animal: true 
       recycle: true
 
 

@@ -338,6 +338,7 @@ input.rdr {
         padding: 0 !important;
         max-width: 100% !important;
         width: 100% !important;
+        position: relative !important;
     }
     .ecwid-fieldLabel {
         font-size: rem(13) !important;
@@ -348,6 +349,16 @@ input.rdr {
         background-color: $s-tertiary !important; 
         margin: 0 !important;
         padding: 1em 0.5em !important;
+    }
+    div.ecwid-minicart-mini {
+        width: auto !important;
+    }
+    .c-site-mini-cart {
+        background-color: $white !important; 
+        padding: rem-calc(5) !important; 
+        display: inline-block !important;
+        position: absolute !important;
+        right: 0 !important; 
     }
     .ecwid-fieldLabel {
         color: darken($dark-gray, 10%) !important;

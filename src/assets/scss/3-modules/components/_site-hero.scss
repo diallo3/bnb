@@ -54,7 +54,7 @@ $hero: c-hero;
 		@include header-size(h1);
 		color: $white;
 		text-shadow: 1px 1px black(0.1); 
-		text-transform: capitalize;
+		text-transform: uppercase;
 		margin-bottom: rem-calc(5); 
 	}
 	.#{$hero}__tag {

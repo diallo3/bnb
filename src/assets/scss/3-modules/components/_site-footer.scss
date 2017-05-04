@@ -73,3 +73,16 @@ $site: c-site-footer;
 		text-align: right;
 	} 
 }
+
+.c-disclaimer-container {
+	background-color: darken($s-primary, 2%); 
+	.c-disclaimer {
+		p {
+			color: $white;
+			font-style: italic; 
+			text-align: center;
+			margin: 0;
+			padding: 0.3em;  
+		}
+	}
+}
