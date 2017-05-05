@@ -333,6 +333,10 @@ input.rdr {
 
 // ECWID
 #ecwid_body {
+    .ecwid-minicart-floating {
+        top: 30% !important;
+        bottom: 0 !important;
+    }
     .ecwid-Product {
         border: 1px solid $light-gray !important;
         padding: 0 !important;
@@ -394,5 +398,16 @@ input.rdr {
         color: darken($dark-gray, 20%) !important;
         font-size: rem(17) !important;
     }
+    .ecwid-fieldEnvelope-error {
+        .ecwid-fieldEnvelope-around {
+            box-shadow: 2px 2px 0 $alt-accent, -2px -2px 0 $alt-accent, 2px -2px 0 $alt-accent, -2px 2px 0 $alt-accent !important;
+        }
+        .ecwid-fieldEnvelope-label-light {
+            color: $alt-accent;
+        }
+    }
+
 }
+
+
 
