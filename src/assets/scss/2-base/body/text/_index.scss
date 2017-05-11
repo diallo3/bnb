@@ -2,6 +2,10 @@ html, body {
 	font-family: $lato; 
 }
 
+body {
+	background-color: $s-primary; 
+}
+
 @include headings() {
   font-family: $quicksand; 
   font-weight: 400; 

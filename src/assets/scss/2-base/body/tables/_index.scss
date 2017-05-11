@@ -1,0 +1,19 @@
+.o-pricing {
+	padding: rem-calc(30 0); 
+	&__summary {
+		@include table($stripe: $table-stripe);
+		@include table-hover;
+		// @include table-stack($header: true);
+		border: 1px solid $light-gray; 
+	}
+	&__head {
+		color: $white;
+		background-color: $s-primary; 
+	}
+	&__data {
+		color: $s-gray;
+	}
+	p {
+		text-align: center;
+	}
+}

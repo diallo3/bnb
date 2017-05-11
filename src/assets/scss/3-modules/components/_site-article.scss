@@ -20,7 +20,7 @@ $con: c-content;
 		}
 		.#{$con}__title {
 			color: darken($alt-primary, 25%);
-			margin-bottom: rem-calc(50); 
+			margin-bottom: rem-calc(30); 
 			&:after {
 				content: '';
 			 	display: block;
@@ -36,10 +36,10 @@ $con: c-content;
 			@include grid-column-position(center);
 		}
 		h1 {
-			@include header-size(h1);
+			@include header-size(h2);
 		}
 		h2 {
-			@include header-size(h2);
+			@include header-size(h3);
 		}
 	}
 	&__product {

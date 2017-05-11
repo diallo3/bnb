@@ -76,3 +76,23 @@ _------------------------------- */
     background-image: -o-linear-gradient(top, $from, $to);
     background-image: linear-gradient(to bottom, $from, $to);
 }
+
+/*-------------------------------------
+
+    GRAYSCALE
+
+    Usage:
+    .grayscale {
+        @include grayscale_element(100%);
+        transition: all 200ms ease-in-out;
+        &:hover {
+            @include grayscale_element(0);
+        }
+    }
+
+*/
+@mixin grayscale_element($value) {
+    -webkit-filter: #{"grayscale(#{$value})"};
+    -moz-filter: #{"grayscale(#{$value})"};
+    filter:#{"grayscale(#{$value})"};
+}

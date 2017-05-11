@@ -28,11 +28,28 @@ figure {
 }
 
 .u-divide {
-	margin: rem-calc(80 0);
+	
+	
+	display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid $light-gray;
+    margin: rem-calc(50 0);
+    padding: 0;
 }
 
 .u-rule {
-	border-top: 1px solid $light-gray; 
+	border-top: 1px solid lighten($light-gray, 10%); 
 	margin: rem-calc(20 0);
+}
+
+.u-grayscale {
+    @include grayscale_element(100%);
+    transition: all 200ms ease-in-out;
+    opacity: .7;
+    &:hover {
+        @include grayscale_element(0);
+        opacity: 1;
+    }
 }
 

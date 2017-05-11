@@ -11,6 +11,9 @@
     // 	boxOfBullets: 'o-bullets'
     // });
 
+
+    
+
     // hamburger
     function hamburgerNav() {
     	var $hb = $('.hamburger');
@@ -39,16 +42,14 @@
 
     // Header
     function stickyHeader() {
-	    $(window).scroll(function() {
-	    	var $header = $('.c-header-container ');
-	        if ($(this).scrollTop() >= 10) {
-	            $header.addClass('sticky');
-	        }
-	        else {
-	            $header.removeClass('sticky');
-	        }
-	    });
-
+        $(window).scroll(function() {
+    	    var $header = $('.c-header-container ');
+            if ($(this).scrollTop() >= 10) {
+                $header.addClass('sticky');
+            } else {
+            $header.removeClass('sticky');
+            }   
+        });
     }
     stickyHeader();
 

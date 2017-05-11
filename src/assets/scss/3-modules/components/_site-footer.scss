@@ -4,7 +4,24 @@ $site: c-site-footer;
 
 .c-summary-container {
 	background-color: $s-primary;
-	border-top: 1px solid $light-gray;  
+	border-top: 1px solid $light-gray;
+	.o-logo__brand {
+		img {
+			@include center-block;
+		}
+		.large {
+			display: none;
+			@include breakpoint(large) {
+				display: block;
+			}
+		}
+		.small {
+			display: block;
+			@include breakpoint(large) {
+				display: none;
+			}
+		}
+	}  
 }
 
 .c-footer-container {

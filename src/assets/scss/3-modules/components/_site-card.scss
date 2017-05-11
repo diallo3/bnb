@@ -15,7 +15,7 @@ $card: c-card;
 		border: 1px solid $light-gray;
 		-webkit-box-shadow: 0 0 6px black(.4); 
 		box-shadow: 0 0 4px black(.4); 
-		padding: 20em 0 0;
+		padding: 0;
 		position: relative;
 	}
 	&__entry {
@@ -85,7 +85,7 @@ $card: c-card;
 
 
 .#{$card}--side {
-	@include breakpoint(large) {
+	@include breakpoint(medium) {
 		.#{$card}__wrap {
 			-webkit-background-size: contain;
 			-o-background-size: contain;

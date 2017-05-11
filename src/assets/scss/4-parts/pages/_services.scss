@@ -1,6 +1,7 @@
 // Services page
 
 $services: c-services;
+$partners: c-partners;
 
 .#{$services}-container {
 	background-color: lighten($light-gray, 3%);
@@ -13,5 +14,11 @@ $services: c-services;
 			@include grid-col(10);
 			@include grid-column-position(center);
 		}
+	}
+}
+
+.#{$partners} {
+	&__item {
+		@include grid-col(6);
 	}
 }

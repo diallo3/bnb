@@ -32,6 +32,9 @@ $hero: c-hero;
 			.o-brand {
 				margin: 0 auto;
 				text-align: center;
+				img {
+					@include center-block;
+				}
 				.large {
 					display: none;
 					@include breakpoint(large) {
